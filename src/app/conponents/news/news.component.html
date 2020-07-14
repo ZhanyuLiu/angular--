@@ -1,20 +1,61 @@
 <app-header></app-header>
+<hr />
 <h1>模板里面绑定数据</h1>
 <h2>{{title}}</h2>
 <h3>{{msg}}</h3>
 <h2>{{username}}</h2>
 <h3>{{student}}</h3>
-<hr />
 <h6>{{userinfo.username}}</h6>
-<hr />
 <div>
     {{message}}
 </div>
+<hr />
 
 <h1>模板里面绑定属性</h1>
+
 <div title="我是一个div">
     鼠标瞄上去看一下
 </div>
+
 <div [title] = "student">
     张三
 </div>
+
+<div>
+    {{content}}
+    <span [innerHTML] = 'content' class="red"></span>
+
+</div>
+<hr />
+
+<h1>模板里面允许做简单的运算</h1>
+1 + 2 = {{1 + 2}}
+
+<ol>
+    <li *ngFor="let item of arr">
+        {{item}}
+    </li>
+    <ul *ngFor="let item of list">
+        {{item}}
+    </ul>
+    <li *ngFor="let item of items">
+        {{item}}
+    </li>
+</ol>
+<ul>
+    <li *ngFor="let item of userlist">
+        {{item.username}}---{{item.age}}
+    </li>
+</ul>
+<br />
+<ul>
+    <li *ngFor="let item of cars">
+        <h2>{{item.cate}}</h2>
+        <ol>
+            <li *ngFor="let car of item.list">
+                {{car.title}}:{{car.price}}
+            </li>
+        </ol>
+    </li>
+</ul>
+<hr />
