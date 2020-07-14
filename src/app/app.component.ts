@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularDemo';
+  title = 'angulardemo';
+
+  constructor(){ // 构造函数
+
+  }
 }
