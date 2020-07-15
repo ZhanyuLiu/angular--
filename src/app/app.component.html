@@ -1,7 +1,15 @@
-<app-news></app-news>
+<div class="demo">
+  <div ng-app = "myApp" ng-controller= "formCtrl">
+    <button ng-click = "formclick()">Form表单</button>
+    <div ng-hide = "myVar">
+      <app-form></app-form>
+    </div>
+  </div>
 
-<app-home></app-home>
+  <app-news></app-news>
+  <app-home></app-home>
 
-<div>
-  你好angular
+  <div>
+    你好angular
+  </div>
 </div>

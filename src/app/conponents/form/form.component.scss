@@ -1,0 +1,25 @@
+h2 {
+    text-align: center;
+}
+.people_list {
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #eeeeee;
+}
+li {
+    height: 50px;
+    line-height: 50px;
+    // 安装node-sass和sass-loader包，修改css后缀为scss
+    .from_iput {
+        width: 300px;
+        height: 40px;
+    }
+.submit {
+    width: 100px;
+    height: 30px;
+    float: right;
+    margin-right: 50px;
+    margin-top: 150px;
+}
+}

@@ -1,1 +1,80 @@
-<h2>我是首页组件</h2>
+<h1>引入图片</h1>
+<img src="assets/image/01.jpg" alt="茜" />
+<img [src]="picUrl" alt="百度" />
+<hr />
+
+<h1>循环数据 显示数的索引（key）</h1>
+<ul>
+    <li *ngFor="let item of list; let key = index;">
+        {{ key }} ---- {{ item.title }}
+    </li>
+</ul>
+<hr />
+
+<h1>条件判断语句 *ngIf</h1>
+<div *ngIf="flag">
+    <img src="assets/image/01.jpg" alt="茜" />
+</div>
+<div *ngIf="!flag">
+    <img src="assets/image/02.jpg" alt="茜" />
+</div>
+<ul>
+    <li *ngFor="let item of list; let key = index;">
+        <span *ngIf="key == 1" class="red"> {{ key }} ---- {{ item.title }} </span>
+        <span *ngIf="key != 1"> {{ key }} ---- {{ item.title }} </span>
+    </li>
+</ul>
+<hr />
+
+<h1>条件判断语句 *ngSwitch</h1>
+<div [ngSwitch]="orderStatus">
+    <div *ngSwitchCase="1">已支付</div>
+    <div *ngSwitchCase="2">支付并确认订单</div>
+    <div *ngSwitchCase="3">已经发货</div>
+    <div *ngSwitchCase="4">已经收货</div>
+    <div *ngSwitchDefault>无效订单</div>
+</div>
+<hr />
+
+<h1>属性[ngClass]、[ngStyle]</h1>
+<div class = "red">
+    ngClass演示（尽量不要用dom来改变class）
+</div>
+<div [ngClass] = "{'blue':flag, 'red': flag}">
+    ngClass演示
+</div>
+
+<strong>循环数组，让数组的第一个元素的样式为red</strong>
+<li *ngFor="let item of list; let key = index;" [ngClass] = "{'red':key == 0, 'orange':key == 1}">
+    {{ key }} ---- {{ item.title }}
+</li>
+
+<hr />
+<p style = "color: red;">我是一个p标签</p>
+<p [ngStyle]="{'color': 'red'}">我是一个p标签</p>
+<p [ngStyle]="{'color': attr}">我是一个p标签</p>
+<hr />
+
+<h1>管道</h1>
+<span>{{ today | date:'yyyy-mm-dd hh:mm:ss' }}</span>
+<hr />
+
+<h1>事件</h1>
+<button (click) = "run()">执行事件</button>
+<button (click) = "getData()">执行方法获取数据</button>
+<button (click) = "setData()">执行方法改变属性里面的数据</button>
+<strong>{{ title }}</strong>
+<button (click) = "runEvent($event)">执行方法获取事件对象</button>
+<hr />
+
+<h1>表单事件以及事件对象</h1>
+<!-- <input type="text" (keydown) = "keyDown()" /> -->
+keydown: <input type="text" (keydown) = "keyDown($event)" />
+keyup：<input type="text" (keyup) = "keyUp($event)" />
+<hr />
+
+<h1>双向数据绑定 --- MVVM 只是针对表单</h1>
+<input type="text" [(ngModel)] = "keywords"/>
+{{ keywords }}
+<button (click) = "changekeywords()">改变keywords的值</button>
+<button (click) = "getkeywords()">获取keywords的值</button>
