@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgClass } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -8,20 +9,26 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angulardemo';
 
-  // public isHide:boolean = false;
+  public flag1:boolean = true;
+  public flag2:boolean = true;
+  public flag3:boolean = true;
+  public flag4:boolean = true;
 
   constructor(){ // 构造函数
-    // var app = angular.module('myApp', []);
-    // app.controller('formCtrl', function($scope) {
-    //   $scope.myVar = false;
-    //   $scope.formclick = function() {
-    //     $scope.myVar = !$scope.myVar;
-    //   }
-    // });
 
   }
 
-  // formclick(e) {
-  //   e.target.isHide = !e.target.myVar;
-  // }
+  formclick1() {
+    this.flag1 = !this.flag1
+  }
+
+  formclick2() {
+    this.flag2 = !this.flag2
+  }
+  formclick3() {
+    this.flag3 = !this.flag3
+  }
+  formclick4() {
+    this.flag4 = !this.flag4
+  }
 }

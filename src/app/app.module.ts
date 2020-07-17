@@ -6,16 +6,18 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { NewsComponent } from './conponents/news/news.component';
 import { HomeComponent } from './conponents/home/home.component';
-import { HeaderComponent } from './conponents/header/header.component';
 import { FormComponent } from './conponents/form/form.component';
+import { SerachComponent } from './conponents/serach/serach.component';
+import { TodolistComponent } from './conponents/todolist/todolist.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
     AppComponent,
     NewsComponent,
     HomeComponent,
-    HeaderComponent,
-    FormComponent
+    FormComponent,
+    SerachComponent,
+    TodolistComponent
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,
