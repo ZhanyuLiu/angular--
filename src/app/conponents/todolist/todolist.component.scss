@@ -7,17 +7,16 @@ h2 {
     padding-left: 10px;
     padding-top: 20px;
     background-color: white;
-    input {
+    .formInput {
         margin-bottom: 20px;
         width: 300px;
         height: 32px;
     }
-    button {
-        height: 32px;
-        width: 80px;
-        margin-left: 5px;
+    h3 {
+        background-color: white;
     }
     li {
         background-color: white;
+        line-height: 60px;
     }
 }

@@ -10,6 +10,9 @@ import { FormComponent } from './conponents/form/form.component';
 import { SerachComponent } from './conponents/serach/serach.component';
 import { TodolistComponent } from './conponents/todolist/todolist.component';
 
+// 引入服务
+import { StorageService } from "./service/storage.service";
+
 @NgModule({
   declarations: [ //配置当前项目运行的组件
     AppComponent,
@@ -23,7 +26,7 @@ import { TodolistComponent } from './conponents/todolist/todolist.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [], // 配置项目所需要的服务
+  providers: [ StorageService ], // 配置项目所需要的服务
   bootstrap: [AppComponent] //指定应用的主视图（称为根组件），通过引导根APPmodule来启动应用，这里一般写的是根组件的
 })
 
