@@ -12,6 +12,9 @@ import { TodolistComponent } from './conponents/todolist/todolist.component';
 
 // 引入服务
 import { StorageService } from "./service/storage.service";
+import { Home1Component } from './conponents/home1/home1.component';
+import { DomViewComponent } from './conponents/dom-view/dom-view.component';
+import { HeaderComponent } from './conponents/header/header.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
@@ -20,7 +23,10 @@ import { StorageService } from "./service/storage.service";
     HomeComponent,
     FormComponent,
     SerachComponent,
-    TodolistComponent
+    TodolistComponent,
+    Home1Component,
+    DomViewComponent,
+    HeaderComponent
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,

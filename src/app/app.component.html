@@ -5,6 +5,9 @@
       <app-form></app-form>
     </div>
   </div>
+  <br>
+  <hr>
+  <br>
 
   <div>
     <button class="button" (click) = "formclick2()">绑定数据</button>
@@ -12,20 +15,49 @@
       <app-news></app-news>
     </div>
   </div>
+  <br>
+  <hr>
+  <br>
+
   <div>
     <button class="button" (click) = "formclick3()">图片-管道-判断-时间</button>
     <div [ngClass]="{'hide': flag3}">
       <app-home></app-home>
     </div>
   </div>
+  <br>
+  <hr>
+  <br>
+
   <div>
     <button class="button" (click) = "formclick4()">例子</button>
     <div [ngClass]="{'hide': flag4}">
       <app-serach></app-serach>
     </div>
   </div>
-  <app-todolist></app-todolist>
+  <br>
+  <hr>
+  <br>
+
   <div>
-    你好angular
+    <button class="button" (click) = "formclick5()">服务</button>
+    <div [ngClass]="{'hide': flag5}">
+      <app-todolist></app-todolist>
+    </div>
   </div>
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    <button class="button" (click) = "formclick6()">原生dom操作</button>
+    <div [ngClass]="{'hide': flag6}">
+      <app-home1></app-home1>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  
+  <app-dom-view></app-dom-view>
 </div>
