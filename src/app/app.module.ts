@@ -15,6 +15,7 @@ import { StorageService } from "./service/storage.service";
 import { Home1Component } from './conponents/home1/home1.component';
 import { DomViewComponent } from './conponents/dom-view/dom-view.component';
 import { HeaderComponent } from './conponents/header/header.component';
+import { TransitionComponent } from './conponents/transition/transition.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
@@ -26,7 +27,8 @@ import { HeaderComponent } from './conponents/header/header.component';
     TodolistComponent,
     Home1Component,
     DomViewComponent,
-    HeaderComponent
+    HeaderComponent,
+    TransitionComponent
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,

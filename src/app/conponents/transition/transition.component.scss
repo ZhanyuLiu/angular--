@@ -1,0 +1,17 @@
+#aside {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: rgb(92, 81, 190);
+    color: #ffffff;
+    transform: translate(100%, 0);
+
+    transition: all 2s;
+}
+button {
+    background-color: floralwhite;
+    width: 100px;
+    margin: 5px;
+}

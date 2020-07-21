@@ -59,5 +59,23 @@
   <hr>
   <br>
   
-  <app-dom-view></app-dom-view>
+  <div>
+    <button class="button" (click) = "formclick7()">原生dom操作</button>
+    <div [ngClass]="{'hide': flag7}">
+      <app-dom-view></app-dom-view>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    <button class="button" (click) = "formclick8()">侧边栏动画</button>
+    <div [ngClass]="{'hide': flag8}">
+      <app-transition></app-transition>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
 </div>
