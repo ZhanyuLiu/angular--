@@ -20,6 +20,7 @@ import { HomeZujianComponent } from './conponents/home-zujian/home-zujian.compon
 import { HeaderZujianComponent } from './conponents/header-zujian/header-zujian.component';
 import { NewsZujianComponent } from './conponents/news-zujian/news-zujian.component';
 import { FooterZujianComponent } from './conponents/footer-zujian/footer-zujian.component';
+import { LifecycleComponent } from './conponents/lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
@@ -36,7 +37,8 @@ import { FooterZujianComponent } from './conponents/footer-zujian/footer-zujian.
     HomeZujianComponent,
     HeaderZujianComponent,
     NewsZujianComponent,
-    FooterZujianComponent
+    FooterZujianComponent,
+    LifecycleComponent
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,
