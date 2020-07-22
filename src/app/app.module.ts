@@ -16,6 +16,10 @@ import { Home1Component } from './conponents/home1/home1.component';
 import { DomViewComponent } from './conponents/dom-view/dom-view.component';
 import { HeaderComponent } from './conponents/header/header.component';
 import { TransitionComponent } from './conponents/transition/transition.component';
+import { HomeZujianComponent } from './conponents/home-zujian/home-zujian.component';
+import { HeaderZujianComponent } from './conponents/header-zujian/header-zujian.component';
+import { NewsZujianComponent } from './conponents/news-zujian/news-zujian.component';
+import { FooterZujianComponent } from './conponents/footer-zujian/footer-zujian.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
@@ -28,7 +32,11 @@ import { TransitionComponent } from './conponents/transition/transition.componen
     Home1Component,
     DomViewComponent,
     HeaderComponent,
-    TransitionComponent
+    TransitionComponent,
+    HomeZujianComponent,
+    HeaderZujianComponent,
+    NewsZujianComponent,
+    FooterZujianComponent
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,

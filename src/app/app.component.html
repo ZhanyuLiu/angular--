@@ -78,4 +78,26 @@
   <br>
   <hr>
   <br>
+
+  <div>
+    <button class="button" (click) = "formclick9()">父传子</button>
+    <div [ngClass]="{'hide': flag9}">
+      <app-home-zujian></app-home-zujian>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div>
+    <button class="button" (click) = "formclick9()">子传父</button>
+    <div [ngClass]="{'hide': flag9}">
+      <app-news-zujian></app-news-zujian>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  
 </div>

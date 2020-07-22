@@ -17,34 +17,38 @@ export class AppComponent {
   public flag6:boolean = true;
   public flag7:boolean = true;
   public flag8:boolean = true;
+  public flag9:boolean = true;
 
   constructor(){ // 构造函数
 
   }
 
   formclick1() {
-    this.flag1 = !this.flag1
+    this.flag1 = !this.flag1;
   }
 
   formclick2() {
-    this.flag2 = !this.flag2
+    this.flag2 = !this.flag2;
   }
   formclick3() {
-    this.flag3 = !this.flag3
+    this.flag3 = !this.flag3;
   }
   formclick4() {
-    this.flag4 = !this.flag4
+    this.flag4 = !this.flag4;
   }
   formclick5() {
-    this.flag5 = !this.flag5
+    this.flag5 = !this.flag5;
   }
   formclick6() {
-    this.flag6 = !this.flag6
+    this.flag6 = !this.flag6;
   }
   formclick7() {
-    this.flag7 = !this.flag7
+    this.flag7 = !this.flag7;
   }
   formclick8() {
-    this.flag8 = !this.flag8
+    this.flag8 = !this.flag8;
+  }
+  formclick9() {
+    this.flag9= !this.flag9;
   }
 }
