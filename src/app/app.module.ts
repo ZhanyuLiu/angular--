@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 // 引入表单相关的模块，才能用双向数据绑定
 import { FormsModule } from '@angular/forms';
 
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http'
+
 import { AppComponent } from './app.component';
 import { NewsComponent } from './conponents/news/news.component';
 import { HomeComponent } from './conponents/home/home.component';
@@ -21,6 +23,7 @@ import { HeaderZujianComponent } from './conponents/header-zujian/header-zujian.
 import { NewsZujianComponent } from './conponents/news-zujian/news-zujian.component';
 import { FooterZujianComponent } from './conponents/footer-zujian/footer-zujian.component';
 import { LifecycleComponent } from './conponents/lifecycle/lifecycle.component';
+import { RequestComponent } from './conponents/request/request.component';
 
 @NgModule({
   declarations: [ //配置当前项目运行的组件
@@ -38,11 +41,14 @@ import { LifecycleComponent } from './conponents/lifecycle/lifecycle.component';
     HeaderZujianComponent,
     NewsZujianComponent,
     FooterZujianComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    RequestComponent,
   ],
   imports: [  //配置当前模块运行依赖的其他模块
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [ StorageService ], // 配置项目所需要的服务
   bootstrap: [AppComponent] //指定应用的主视图（称为根组件），通过引导根APPmodule来启动应用，这里一般写的是根组件的

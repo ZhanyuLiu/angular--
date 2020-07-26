@@ -18,6 +18,8 @@ export class AppComponent {
   public flag7:boolean = true;
   public flag8:boolean = true;
   public flag9:boolean = true;
+  public flag10:boolean = true;
+  public flag11:boolean = true;
 
   constructor(){ // 构造函数
 
@@ -50,5 +52,11 @@ export class AppComponent {
   }
   formclick9() {
     this.flag9= !this.flag9;
+  }
+  formclick10() {
+    this.flag10= !this.flag10;
+  }
+  formclick11() {
+    this.flag11= !this.flag11;
   }
 }

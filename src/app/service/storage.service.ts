@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
-import {Observable} from 'rxjs';
+import { Observable } from 'rxjs';
+
+import axios from 'axios';
 
 @Injectable({
   providedIn: 'root'
@@ -79,5 +81,17 @@ export class StorageService {
         observe.next(count)
       },1000);
     });
+  }
+
+
+  //axios请求数据
+  axiosGet(api) {
+
+    return new Promise((resolve, reject)=>{
+      axios.get(api).then(function(response) {
+        // console.log(response);
+        resolve(response);
+      })
+    })
   }
 }

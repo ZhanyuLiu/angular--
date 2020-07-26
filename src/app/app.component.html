@@ -98,6 +98,17 @@
   <br>
   <hr>
   <br>
-  <app-lifecycle></app-lifecycle>
+
+  <div>
+    <button class="button" (click) = "formclick10()">生命周期</button>
+    <div [ngClass]="{'hide': flag10}">
+      <app-lifecycle></app-lifecycle>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <app-request></app-request>
   
 </div>
